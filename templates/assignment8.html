@@ -10,8 +10,10 @@
     {% include('headerInclude.html') %}
 
     {{ page_name| upper }}
+    <br>
 
     {% block cart %}
+        <a href="/tv">Click Here For Change the Lists</a>
         <h2>Hobbies:</h2>
         <ol>
              {% for hobby in hobbies if not hobby.hidden| sort %}
